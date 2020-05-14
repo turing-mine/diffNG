@@ -36,8 +36,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var listen = function (projectType) {
+var listen = function (staticContentFolder) {
     var _this = this;
+    if (staticContentFolder === void 0) { staticContentFolder = 'dist'; }
     var express = require('express');
     var session = require('express-session');
     var cors = require('cors');
@@ -50,7 +51,6 @@ var listen = function (projectType) {
     var preferredPort = process.env.PORT || '80';
     var qs = require('qs');
     var app = express();
-    var staticContentFolder = 'dist';
     app.use(express.static(staticContentFolder));
     app.use('*', express.static(staticContentFolder + "/index.html"));
     var appServer;
@@ -64,7 +64,7 @@ var listen = function (projectType) {
                 case 1:
                     appServer = _a.sent();
                     console.log("[" + process.title + "]: The app server is listening to port " + preferredPort);
-                    console.log("projectType: " + projectType);
+                    console.log("static content folder: " + staticContentFolder);
                     return [3 /*break*/, 3];
                 case 2:
                     err_1 = _a.sent();

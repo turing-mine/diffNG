@@ -9,4 +9,4 @@ catch (err) {
     process.title = "diffNG";
     console.log('package.json path is invalid');
 }
-Server.listen("angular");
+Server.listen();
