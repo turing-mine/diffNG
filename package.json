@@ -1,7 +1,7 @@
 {
   "name": "diffNG",
   "version": "0.1.0",
-  "description": "diffNG is a simple Express server for static Angular build deployments.",
+  "description": "diffNG is an Express server for static React, Angular and Vue build deployments.",
   "main": "server.js",
   "scripts": {
     "start": "node listen.js",
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/turing-mine/diffNG#readme",
   "devDependencies": {
-    "@types/node": "12.11.1",
-    "typescript": "3.7.5"
+    "@types/node": "14.0.27",
+    "typescript": "3.9.7"
   },
   "dependencies": {
     "cookie-parser": "1.4.5",
