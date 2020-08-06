@@ -1,5 +1,5 @@
 # diffNG
-diffNG (differential engine) is an Express server/router for static React, Angular and Vue build deployments.
+diffNG (DifferentialEngine) is an Express server/router for static React, Angular and Vue build deployments.
 
 It can be added to any Node project as a production or dev GitHub dependency.
 
