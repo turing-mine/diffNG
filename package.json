@@ -1,6 +1,6 @@
 {
   "name": "diffNG",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "diffNG is an Express server for static React, Angular and Vue build deployments.",
   "main": "server.js",
   "scripts": {
@@ -12,8 +12,6 @@
     "url": "git+https://github.com/turing-mine/diffNG.git"
   },
   "keywords": [
-    "angular",
-    "Angular",
     "static",
     "build",
     "Node",
